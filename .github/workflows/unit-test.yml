@@ -17,10 +17,5 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '16'
-      - uses: actions/cache@v2
-        with:
-          path: ~/.npm
-          key: ${{ runner.OS }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: ${{ runner.OS }}-node-
       - run: npm ci
       - run: npm test
