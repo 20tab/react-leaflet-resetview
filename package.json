@@ -1,6 +1,6 @@
 {
   "name": "@20tab/react-leaflet-resetview",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "react-leaflet control for resetting the map view",
   "main": "./dist/esm/ResetViewControl.js",
   "types": "./dist/types/ResetViewControl.d.ts",
