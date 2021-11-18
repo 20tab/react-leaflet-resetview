@@ -4,7 +4,7 @@ import "@testing-library/jest-dom";
 
 import { MapContainer, useMapEvents } from "react-leaflet";
 import ResetViewControl from "../src/ResetViewControl";
-import { ResetViewControlOptions } from "../dist/types/ResetViewControl";
+import { ResetViewControlOptions } from "../src/ResetViewControl";
 
 describe("ResetViewControl", () => {
   const mockHandleViewReset = jest.fn();
