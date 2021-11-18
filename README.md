@@ -30,4 +30,12 @@ const Map = () => {
 };
 ```
 
+## Props
+
+| Name       | Type                                                                 | Default      | Description                        |
+|------------|----------------------------------------------------------------------|--------------|------------------------------------|
+| position?   | [ControlOptions](https://leafletjs.com/reference.html#control-position) | "topleft" | The position of the control        |
+| title?  | string                                                                  | "Reset map view"    | The control title.       |
+| icon?     | string                                                | "\u2610"    | The control icon. Can be either a path for `url()` or a unicode character. |
+
 
