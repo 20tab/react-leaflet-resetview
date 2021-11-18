@@ -24,7 +24,10 @@ import ResetViewControl from '@20tab/react-leaflet-resetview';
 const Map = () => {
     return (
         <MapContainer zoom={5} center={[-96.8716348, 32.8205866]}>
-            <ResetViewControl title="Reset view" />
+            <ResetViewControl 
+                title="Reset view"
+                icon="url(/some/relative/path.png)"
+            />
         </MapContainer>
     );
 };

@@ -35,7 +35,16 @@ const _getControl = Control.extend({
 
     const container = DomUtil.create("div", "leaflet-bar");
     const link = DomUtil.create("a", "", container);
-    link.setAttribute("title", title);
+
+    const linkAttrs = {
+      title,
+      href: "#",
+    };
+
+    Object.entries(linkAttrs).forEach(([k, v]) => {
+      link.setAttribute(k, v);
+    });
+
     link.innerHTML = icon;
 
     if (RegExp(/url\(.+\)/).test(icon)) {

@@ -53,4 +53,9 @@ describe("ResetViewControl", () => {
       "background-image": "url(/some/relative/path.png)",
     });
   });
+
+  test("link has href", () => {
+    render(<Map />);
+    expect(screen.getByTitle("Reset view")).toHaveAttribute("href", "#");
+  });
 });
