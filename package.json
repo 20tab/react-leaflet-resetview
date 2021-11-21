@@ -1,11 +1,12 @@
 {
   "name": "@20tab/react-leaflet-resetview",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "react-leaflet control for resetting the map view",
   "main": "./dist/esm/ResetViewControl.js",
   "types": "./dist/types/ResetViewControl.d.ts",
   "scripts": {
     "test": "jest",
+    "lint": "eslint .",
     "build:esm": "tsc",
     "prepare": "husky install"
   },
@@ -45,6 +46,9 @@
     "@types/jest": "^27.0.2",
     "@types/leaflet": "^1.7.6",
     "@types/react": "^17.0.35",
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
+    "eslint": "^8.3.0",
     "husky": "^7.0.4",
     "jest": "^27.3.1",
     "leaflet": "^1.7.1",
@@ -74,5 +78,22 @@
         "lines": 90
       }
     }
-  }
+  },
+  "eslintConfig": {
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+      "@typescript-eslint"
+    ],
+    "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/recommended"
+    ],
+    "rules": {
+      "@typescript-eslint/consistent-type-imports": "error"
+    }
+  },
+  "eslintIgnore": [
+    "node_modules",
+    "dist"
+  ]
 }
