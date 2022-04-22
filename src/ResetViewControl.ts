@@ -1,13 +1,7 @@
 import { createControlComponent } from "@react-leaflet/core";
-import {
-  Control,
-  Map,
-  DomUtil,
-  DomEvent,
-  Util,
-  ControlOptions,
-  LatLng,
-} from "leaflet";
+import { Control, DomUtil, DomEvent, Util } from "leaflet";
+
+import type { Map, ControlOptions, LatLng } from "leaflet";
 
 export type ResetViewControlOptions = {
   /**
