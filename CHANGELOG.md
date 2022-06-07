@@ -11,4 +11,4 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 - React v18, Leaflet v1.8, and react-leaflet v4.0 are now required as peer dependencies.
 
-[1.1.0]: https://github.com/elkrange/maroon-bells-react-integration/compare/v1.0.1...v1.1.0
+[1.1.0]: https://github.com/20tab/react-leaflet-resetview/compare/1.0.1...1.1.0
